@@ -177,6 +177,15 @@ export function factoryDashboard(config) {
             return parts.length ? parts.join(' · ') : JSON.stringify(e);
         },
 
+        // Badges on the Manual page tabs (phone / tablet).
+        get activeOutputsCount() {
+            return Object.values(this.outputs).filter(flag).length;
+        },
+
+        get activeSensorsCount() {
+            return Object.values(this.sensors).filter(Boolean).length;
+        },
+
         isActive(sensorId) {
             return Boolean(this.sensors[sensorId]);
         },

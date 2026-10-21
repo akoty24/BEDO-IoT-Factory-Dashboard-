@@ -9,15 +9,17 @@
                 <h3 class="text-sm font-bold text-gray-800 dark:text-gray-100 tracking-wider border-b border-gray-100 dark:border-gray-800 pb-2">Automatic Sequence Control</h3>
 
                 <!-- factory/cmd/auto start | feed,  factory/cmd/stop -->
-                <div class="grid grid-cols-3 gap-2.5">
+                <div class="grid grid-cols-2 gap-2.5">
                     <button type="button" @click="autoCommand('start')" :disabled="!canControl"
                             class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 min-h-12 rounded-xl text-sm shadow-sm transition disabled:opacity-50 disabled:cursor-not-allowed">
                         ▶ Start
                     </button>
+                    {{-- Feed Part hidden for now. To bring it back: uncomment and set the grid above to grid-cols-3.
                     <button type="button" @click="autoCommand('feed')" :disabled="!canControl"
                             class="bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 min-h-12 rounded-xl text-sm shadow-sm transition disabled:opacity-50 disabled:cursor-not-allowed">
                         ⬇ Feed Part
                     </button>
+                    --}}
                     <button type="button" @click="sendMachineCommand('stop')"
                             class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 min-h-12 rounded-xl text-sm shadow-sm transition">
                         ■ Stop

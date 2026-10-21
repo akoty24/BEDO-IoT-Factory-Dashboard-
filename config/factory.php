@@ -150,7 +150,7 @@ return [
 
     'counters' => [
         'product1' => ['label' => 'Product 1 (Red)', 'color' => 'text-emerald-400'],
-        'product2' => ['label' => 'Product 2 (Green/Blue)', 'color' => 'text-emerald-400'],
+        'product2' => ['label' => 'Product 2 (Orange)', 'color' => 'text-orange-400'],
         'product3' => ['label' => 'Product 3 (Yellow)', 'color' => 'text-amber-400'],
         'rejected' => ['label' => 'Rejected', 'color' => 'text-red-400'],
         'errors' => ['label' => 'Error Count', 'color' => 'text-red-400'],

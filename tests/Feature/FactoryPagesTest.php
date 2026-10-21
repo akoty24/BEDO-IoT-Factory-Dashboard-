@@ -99,7 +99,8 @@ class FactoryPagesTest extends TestCase
         $this->get('/automatic')
             ->assertOk()
             ->assertSee("autoCommand('start')", false)
-            ->assertSee("autoCommand('feed')", false);
+            // Feed Part is hidden (Blade comment) for now.
+            ->assertDontSee("autoCommand('feed')", false);
     }
 
     public function test_removed_pages_are_gone(): void
